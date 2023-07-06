@@ -1,16 +1,16 @@
 
-public class Personagem {
+public class PersonagemJose {
 
 String nome; 
 int vida;
 
-Personagem(String nome,int vida){
+PersonagemJose(String nome,int vida){
 
 this.nome = nome;
 this.vida = 100;
 }
 
-void porcentagem (int mudança){
+void porcentagemJose (int mudança){
     this.vida = this.vida + mudança;
     System.out.println("Após essa decisão, sua porcentagem de vida totaliza-se em: " + this.vida + "%.");
 

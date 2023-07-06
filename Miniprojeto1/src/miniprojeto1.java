@@ -7,29 +7,27 @@ public class miniprojeto1 {
         System.out.println("Bem-vindo, leitor!");
         System.out.println("Preparado para decidir o futuro dessa história? cada decisão sua afetará diretamente na vida"+
         "do personagem, então tome cuidada e boa sorte, vamos começar!");
-        System.out.println("Era uma vez dois amigos baderneiros, João e José eram o terror da vizinhaça, "+
+
+        PersonagemJoao João = new PersonagemJoao("João", 100);
+       PersonagemJose José = new PersonagemJose("José",100);
+    //PRIMEIRO CAPITULO
+
+    Capitulo Capitulo1 = new Capitulo("Capitulo 1", 
+    "Era uma vez dois amigos baderneiros, João e José eram o terror da vizinhaça, "+
         "por onde passavam, deixavam um rastro de bagunça e desordem. Certo dia, passaram em uma casa muito "+
         "assustadora, misteriosa e abandonada, ficaram intrigados, porém com medo, então desafiaram-se, quem " +
-       "iria entrar primeiro");
-
-       
-       Personagem João = new Personagem("João", 100);
-       Personagem José = new Personagem("José",100);
-
-
-       String INTERACAO1 = "Agora é com você leitor, quem perdeu no par ou impar?";
-       INTERACAO1 += System.lineSeparator() + "1. João";
-       INTERACAO1 += System.lineSeparator() + "2. Jóse";
-       
-
-       System.out.println(INTERACAO1);
+       "iria entrar primeiro.", 
+    "João", 
+    "José", 
+    João, 100, 
+    José, 100);
 
        int ESCOLHA1 = ESCOLHAS.nextInt();
 
        if(ESCOLHA1 == 1){
         System.out.println("João perdeu no par ou impar e teve que entrar na casa asssutadora"+
          " sozinho.");
-         João.porcentagem(-60);
+         João.porcentagemJoao;(-60);
         
          System.out.println("Apesar de estar como muito medo, ele entrou na casa escura, deu algumas passos"+
        "e escutou um baruho.");
@@ -47,7 +45,7 @@ public class miniprojeto1 {
        if(ESCOLHA2 == 1){   
         
         System.out.println("Seu amigo escutou e correu para ajuda-lo.");
-        João.porcentagem(-5);
+        João.porcentagemJoao(-5);
 
         System.out.println("Assustados com o alto barulho, eles decidiram seguir juntos");
         
