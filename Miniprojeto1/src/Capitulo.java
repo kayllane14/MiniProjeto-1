@@ -5,28 +5,22 @@ public class Capitulo {
     String texto;
     String escolha1;
     String escolha2;
-    PersonagemJoao personagemJoao;
-    int porcentagemJoao;
-    PersonagemJose personagemJose;
-    int porcentagemJose;
+    Personagem personagem1;
+    Personagem personagem2;
 
     Capitulo(String nome,
     String texto,
     String escolha1,
     String escolha2,
-    PersonagemJoao personagemJoao,
-    int porcentagemJoao,
-    PersonagemJose personagemJose,
-    int porcentagemJose){
+    Personagem personagem1,
+    Personagem personagem2){
 
     this.nome = nome;
     this.texto = texto;
     this.escolha1 = escolha1;
     this.escolha2 = escolha2;
-    this.personagemJoao = personagemJoao;
-    this.porcentagemJoao = porcentagemJoao;
-    this.personagemJose = personagemJose;
-    this.personagemJose = personagemJose;
+    this.personagem1 = personagem1;
+    this.personagem2 = personagem2;
 }
 
 void mostrar() {
